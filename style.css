@@ -1,4 +1,4 @@
-/* General page setup */
+
 body {
   margin: 0;
   font-family: 'Trebuchet MS', sans-serif;
@@ -11,19 +11,18 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;              /* makes the bar span across the whole screen */
+  width: 100%;
   height: 70px;
-  background-color: #333;   /* gray bar */
+  background-color: #333;  
   color: white;
   display: flex;
-  justify-content: center;  /* centers title horizontally */
-  align-items: center;      /* centers title vertically */
+  justify-content: center; 
+  align-items: center;      
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 
-/* Sidebar */
 .sidebar {
   position: fixed;
   top: 60px;
@@ -38,7 +37,7 @@ header {
   z-index: 9;
 }
 
-/* Navigation links */
+
 .sidebar a {
   color: #f5f5f5;
   text-decoration: none;
@@ -53,7 +52,7 @@ header {
   color: #00aaff;
 }
 
-/* Headings and content */
+
 h1, h2 {
   background: linear-gradient(to right, #00aaff, #ff0000);
   -webkit-background-clip: text;
@@ -64,12 +63,15 @@ h1, h2 {
 }
 
 p {
-  text-align: justify;
-  line-height: 1.6;
-  margin: 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  line-height: 1.8;
+  font-size: 18px;
 }
 
-/* Images */
+
+
 img {
   display: block;
   margin: 10px auto;
@@ -78,7 +80,7 @@ img {
   box-shadow: 0 0 10px black;
 }
 
-/* Table */
+
 table {
   margin: 20px auto;
   border-collapse: collapse;
@@ -96,13 +98,13 @@ th {
   color: #00aaff;
 }
 
-/* Lists */
+
 ul {
   margin: 20px;
   list-style-type: square;
 }
 
-/* Video */
+
 video, iframe {
   display: block;
   margin: 20px auto;
@@ -110,11 +112,11 @@ video, iframe {
   border-radius: 10px;
 }
 
-/* Favicon */
+
 :root {
   scroll-behavior: smooth;
 }
-/* General video style */
+
 iframe {
   display: block;
   margin: 20px auto;
@@ -123,7 +125,7 @@ iframe {
   box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
 }
 
-/* YouTube Shorts — vertical (9:16) */
+
 .shorts-video {
   width: 30vw;
   max-width: 400px;
@@ -131,10 +133,11 @@ iframe {
   height: auto;
 }
 
-/* Normal YouTube video — widescreen (16:9) */
+
 .widescreen-video {
   width: 80vw;
   max-width: 800px;
   aspect-ratio: 16 / 9;
   height: auto;
 }
+
