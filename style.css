@@ -1,0 +1,140 @@
+/* General page setup */
+body {
+  margin: 0;
+  font-family: 'Trebuchet MS', sans-serif;
+  background: linear-gradient(to right, #000000, #1a1a1a);
+  color: #f5f5f5;
+  padding-left: 180px;
+  padding-top: 80px;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;              /* makes the bar span across the whole screen */
+  height: 70px;
+  background-color: #333;   /* gray bar */
+  color: white;
+  display: flex;
+  justify-content: center;  /* centers title horizontally */
+  align-items: center;      /* centers title vertically */
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 160px;
+  height: 100%;
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 9;
+}
+
+/* Navigation links */
+.sidebar a {
+  color: #f5f5f5;
+  text-decoration: none;
+  margin: 10px 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sidebar a:hover {
+  color: #00aaff;
+}
+
+/* Headings and content */
+h1, h2 {
+  background: linear-gradient(to right, #00aaff, #ff0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+}
+
+p {
+  text-align: justify;
+  line-height: 1.6;
+  margin: 20px;
+}
+
+/* Images */
+img {
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
+  width: 60%;
+  box-shadow: 0 0 10px black;
+}
+
+/* Table */
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 70%;
+}
+
+th, td {
+  border: 1px solid #00aaff;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #333;
+  color: #00aaff;
+}
+
+/* Lists */
+ul {
+  margin: 20px;
+  list-style-type: square;
+}
+
+/* Video */
+video, iframe {
+  display: block;
+  margin: 20px auto;
+  border: 2px solid #00aaff;
+  border-radius: 10px;
+}
+
+/* Favicon */
+:root {
+  scroll-behavior: smooth;
+}
+/* General video style */
+iframe {
+  display: block;
+  margin: 20px auto;
+  border: 3px solid #00aaff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+}
+
+/* YouTube Shorts — vertical (9:16) */
+.shorts-video {
+  width: 30vw;
+  max-width: 400px;
+  aspect-ratio: 9 / 16;
+  height: auto;
+}
+
+/* Normal YouTube video — widescreen (16:9) */
+.widescreen-video {
+  width: 80vw;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+  height: auto;
+}
